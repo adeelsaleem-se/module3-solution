@@ -1,0 +1,183 @@
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  position: relative;
+  width: 100%;
+  color: white;
+}
+
+.container {
+
+  margin: 0px;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+.aaa{
+
+color: cornflowerblue;
+  font-weight: bold;
+text-align: left;
+margin-left:  20px;
+margin-top: 7px;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  float: right;
+  
+  visibility: hidden;
+}
+
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: cornflowerblue;
+  font-family: Helvetica;
+  
+}
+
+.box {
+
+    border: 1px;
+    top :20px;
+    background-color: cornflowerblue;
+    position: absolute;
+    width: 23%;
+    font-family: Helvetica;
+    float: left;
+    padding: 5px;
+    height: 35px; 
+    text-align: center;
+    margin: 0px;
+    color: white;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+p {
+
+  font-size: 17px;
+}
+
+.text {
+  padding-top: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #f1f1f1;
+  height: 1050px;
+  font-family: Helvetica;
+  margin: 0px;
+  text-align: justify;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Simple Responsive Framework. */
+
+.row {
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+ 
+  }
+  .col-lg-4 {
+    width: 33.33%;
+    padding: 20px;
+  }
+
+
+  .text {
+    height: 1100px;
+  }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    position: relative;
+    box-sizing: border-box;  
+  }
+
+  .col-md-6 {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .col-md-12 {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+  }
+
+  
+  .col-md-12 > .text {
+    height: 500px;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+    
+  .col-sm-12 {
+      float: left;
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .topnav a.icon {
+      background: white;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      float: right;
+      
+      visibility: visible;
+    }
+
+    .col-sm-12 > .text {
+      height: 700px;
+    }
+  }

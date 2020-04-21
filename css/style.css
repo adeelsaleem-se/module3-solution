@@ -1,0 +1,226 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: cornflowerblue;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: cornflowerblue;
+  font-family: Helvetica;
+}
+
+.box {
+
+    border: 1px;
+    top :10px;
+    background-color: cornflowerblue;
+    position: absolute;
+    width: 20%;
+    font-family: Helvetica;
+    float: left;
+    padding: 5px;
+    height: 15%; 
+    text-align: center;
+    margin: 0px;
+    color: white;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+
+}
+
+.text {
+  border: 1px solid black;
+  padding-top: 40px;
+  padding-right: 7px;
+  padding-left: 7px;
+  background-color: #f1f1f1;
+  height: 170px;
+  font-family: Helvetica;
+  margin: 0px;
+  text-align: justify;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Simple Responsive Framework. */
+
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+ 
+}
+  .col-lg-4 {
+    width: 33.33%;
+    padding: 10px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    position: relative;
+  box-sizing: border-box;
+    
+    }
+  .col-md-6 {
+    width: 50%;
+    padding: 10px;
+  }
+  .col-md-12 {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+    .col-sm-12 {
+      float: left;
+      position: relative;
+      box-sizing: border-box;
+
+    }
+    .col-sm-12 {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container {
+    height: 675px;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+}}
